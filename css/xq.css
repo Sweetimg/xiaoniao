@@ -1,0 +1,91 @@
+.inner1{
+    width: 1100px;
+    margin: 0 auto;
+}
+.content{
+    /*height: 3000px;*/
+}
+.content .top{
+    margin-top: 70px;
+    color: #311859;
+}
+.content .top>h1{
+    font-size: 54px;
+    text-align: center;
+}
+.content .top .p1{
+    color: #311859;
+    text-align: center;
+}
+.content .top .img>img{
+    display: block;
+    margin: 10px auto;
+}
+/*===========开头=========*/
+.content .cont1{
+    background: url("../img/pen_line_long.png") no-repeat center;
+    width: 1049px;
+    height: 2px;
+    position: relative;
+    margin-top: 200px;
+}
+.content .cont1>p{
+    font-size: 20px;
+    color: #311859;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.content .cont1>span{
+    display: block;
+    background: url(../img/pen_list.png) 0 0;
+    height: 58px;
+    width: 61px;
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+.gly{
+    color:#6b6a6f;
+    margin: 20px 0 50px 0;
+}
+
+.dt img{
+    width: 100%;
+}
+.txt{
+    color: #47464a;
+    width: 780px;
+    margin: 40px auto;
+    line-height: 30px;
+}
+.txt>h3{
+    font-size: 20px;
+}
+.cont_footer{
+    margin-top: 100px;
+    color: #fff;
+    position: relative;
+}
+.cont_footer .span1{
+    background: url("../img/article_iflike.png") 0 0;
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+.cont_footer .span1:hover{
+    background-position: 0 -73px;
+}
+
+.cont_footer .img1{
+    position: absolute;
+    top: 20px;
+    left: 418px;
+}
+.cont_footer .span2{
+    position: absolute;
+    top: 22px;
+    left: 453px;
+}

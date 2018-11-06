@@ -1,0 +1,810 @@
+body {
+    font-family: STKaiti, KaiTi_GB2312, 华文楷体, 宋体, Arial, Helvetica, sans-serif;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.inner{
+    width: 1105px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 120px;
+    /*background-color: #2d1948;*/
+    background-image: url("../img/yinyue_bg.jpg");
+}
+header nav{
+    margin-top: 50px;
+}
+header nav ul{  }
+header nav ul>li{
+    float: left;
+    position: relative;
+    padding-left: 25px;
+    color: #fff;
+    height: 35px;
+    cursor: pointer;
+}
+header nav ul>li h4{
+    display: inline-block;
+    padding-right: 10px;
+}
+i{
+    background: url("../img/nav_xiajiantou.png") no-repeat center;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+b{
+    background: url("../img/nav_now_bg.png") no-repeat  center;
+    width: 4px;
+    height: 4px;
+    display: block;
+    /*top: 10px;
+    left: 10px;
+    position: absolute;*/
+    margin: 10px auto;
+    opacity: 0;
+}
+b.active{
+    opacity: 1;
+}
+header nav ul>li:hover b{
+    opacity: 1;
+}
+header nav ul>li ol{
+    position: absolute;
+    top: 35px;
+    left: -22px;
+    width: 180px;
+    background: #36264a;
+    display: none;
+    overflow: hidden;
+}
+@keyframes run {
+    0%{
+        height: 240px;
+    }
+    25%{
+        height: 300px;
+    }
+    50%{
+        height: 310px;
+    }
+    75%{
+        height: 260px;
+    }
+    100%{
+        height: 240px;
+    }
+
+}
+@keyframes run1 {
+    0%{
+        height: 150px;
+    }
+    25%{
+        height: 160px;
+    }
+    50%{
+        height: 180px;
+    }
+    75%{
+        height: 160px;
+    }
+    100%{
+        height: 150px;
+    }
+
+}
+header nav ul>li:hover ol.navOl{
+    display: block;
+    animation: run linear 0.7s;
+}
+header nav ul>li:hover ol.navOl1{
+    display: block;
+    animation: run1 linear 0.7s;
+}
+header nav ul>li ol>li{
+    width: 180px;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+header nav ul>li ol>li:hover{
+    padding-left: 20px;
+    transition: padding-left 0.4s ease 0s;
+    background: #3498db url(../img/nav_li_bg.png) no-repeat 165px 15px;
+}
+header nav ol>li>a{
+    font-size: 13px;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    line-height: 40px;
+}
+/*===========头部结束=========*/
+.banner {
+    background: url("../img/banner02_bg.jpg") no-repeat center;
+    width: 100%;
+    height: 593px;
+    /*background-size: contain;*/
+    /*可以调整背景图片过大*/
+}
+.banner .inner{
+    position: relative;
+}
+.banner .img1{
+    position: absolute;
+    left: 60px;
+    top: 170px;
+}
+.banner .img2{
+    position: absolute;
+    top: 186px;
+    left: 270px;
+}
+.banner .img3{
+    position: absolute;
+    left: 250px;
+    top: 76px;
+}
+/*==================导航结束===========*/
+.goon img {
+    display: block;
+    margin: 45px auto;
+}
+.section1 .gsi img{
+    display: block;;
+    margin: 0 auto;
+}
+.section1 .gsi img.three{
+    margin-top: 20px;
+}
+.section1 .inner{
+    position: relative;
+    padding-top: 70px;
+}
+.section1 .inner .now_line{
+    background: url("../img/chanpin_nowline_bgline.png") repeat-y center;
+    width: 19px;
+    height: 380px;
+    margin-top: 40px;
+}
+.section1 .inner .now_line .quan{
+    height: 11px;
+    margin-bottom: 63px;
+    position: relative;
+    cursor: pointer;
+}
+.section1 .inner .now_line .quan:hover strong{
+    background: url("../img/chanpin_nowline_xiaoquan.png") 0 11px;
+    transition: all 0.5s ease;
+}
+strong{
+    width: 11px;
+    height: 11px;
+    background: url("../img/chanpin_nowline_xiaoquan.png") 0 0;
+    display: block;
+    cursor: pointer;
+    margin:  0 auto;
+}
+.section1 .inner .now_line span.span1{
+    background: url("../img/chanpin_nowline_daquan.png") no-repeat center;
+    width: 19px;
+    height: 19px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section1 .section1_cont{
+    margin: 10px 0 0 65px;
+}
+
+.section1 .section1_cont .cont1 .left{
+}
+.section1 .section1_cont .cont1 .right{
+    width: 613px;
+}
+.section1_cont .cont1 .right h1{
+    color: #311759;
+    font-size: 30px;
+    background: url(../img/pen_line.png) no-repeat left bottom;
+    height: 60px;
+    position: relative;
+}
+.section1_cont .cont1 .right h1>.span2{
+    background: url("../img/pen.png") no-repeat center;
+    width: 61px;
+    height: 54px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+.section1_cont .cont1 .right .rCont{
+    margin-top:50px;
+    color: #565559;
+}
+.section1_cont .cont1 .right .rCont>img{
+    vertical-align: middle;
+    float: left;
+}
+
+.section1_cont .cont1 .right .rCont>h2{
+    font-size: 24px;
+    width: 470px;
+    float: right;
+    color: #6b6a6f;
+}
+.section1_cont .cont1 .right .rCont>.p1{
+    width: 480px;
+    line-height: 24px;
+    float: right;
+    margin-bottom: 90px;
+}
+.section1_cont .cont1 .right .rCont .p2 p{
+    line-height: 24px;
+}
+.section1_cont .cont1 .right .rCont>.tip{
+    float: right;
+    font-size: 18px;
+    color: #6b6a6f;
+}
+.section1_cont .cont1 .right .rCont>.tip .img1{
+    margin-top: 30px;
+    margin-left: -19px;
+}
+.section1_cont .cont1 .right .rCont>.tip div{
+    /*margin-top: 30px;*/
+}
+.section1_cont .cont1 .right .rCont>.tip .img2{
+    margin-top: 0;
+    margin-left: 160px;
+}
+
+.section1 .change_line{
+    background: url("../img/next&prev_line.png") repeat-x center;
+    width: 610px;
+    height: 2px;
+    position: absolute;
+    top: 330px;
+    left: 494px;
+}
+.section1 .change_line .span1{
+    display: inline-block;
+    background: url("../img/prev_jiantou.png") no-repeat;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: -13px;
+    left: -12px;
+    cursor: pointer;
+}
+.section1 .change_line .span1:hover{
+    background: url("../img/prev_jiantou_hover.png") no-repeat;
+}
+.section1 .change_line .span2{
+    display: inline-block;
+    background: url("../img/next_jiantou.png") no-repeat;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: -13px;
+    left: 585px;
+    cursor: pointer;
+}
+.section1 .change_line .span2:hover{
+    background: url("../img/next_jiantou_hover.png") no-repeat;
+}
+/*=================内容一结束======================*/
+.section2{
+    background: url("../img/mokuai02_bg.jpg") no-repeat top;
+    width: 100%;
+    /*min-height: 1300px;*/
+    height: 923px;
+    margin-top: 100px;
+    color: #fff;
+}
+.section2 .top{
+    padding-top: 112px;
+}
+.section2 .top>h1{
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+}
+.section2 .top>h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+.section2 .top>img{
+    display: block;
+    margin: 40px auto 0;
+}
+/*=================内容二结束=====================*/
+.section3 .s3_top img{
+    display: block;
+    margin: 0 auto;
+}
+.section3 .s3_head{
+    margin-top: 30px;
+}
+.section3 .s3_head>h1{
+    text-align: center;
+    font-size: 54px;
+    color: #311759;
+}
+.section3 .s3_head>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: #311759;
+    text-align: center;
+}
+.section3 .s3_head>img{
+    display: block;
+    margin: 20px auto;
+}
+.section3 .s3_cont{
+    margin-top: 40px;
+}
+.section3 .s3_cont1{
+    margin-bottom: 68px;
+    border-bottom: 2px dashed #e0e0e2;
+    padding-bottom: 68px;
+}
+.section3 div.s3{
+    border: none;
+}
+
+.section3 .s3_cont1 li{
+    float: left;
+}
+.section3 .s3_cont1 .num{
+    width: 148px;
+    font-size: 90px;
+    color: rgb(181, 182, 186);
+    font-family: 宋体;
+}
+.section3 .s3_cont1 .title{
+    width: 285px;
+    text-align: right;
+    padding-top: 31px;
+    color: #5d556f;
+}
+.section3 .s3_cont1 .img{
+    width: 116px;
+    margin: 0 44px 0 59px;
+    cursor: pointer;
+}
+.section3 .s3_cont1 .txt{
+    width: 320px;
+    margin: 20px 60px 0 0;
+    font-family: KaiTi_GB2312;
+    line-height: 24px;
+    color: #565559;
+}
+.section3 .s3_cont1 .last{
+    background: url("../img/business_zhankaishouqi.png") 0 0;
+    width: 67px;
+    height: 67px;
+    margin-top: 20px;
+}
+.section3 .s3_cont1 li.last1{
+    background-position: 0 -67px;
+}
+
+.section3 .s3_cont2{
+    width: 790px;
+    padding: 0 185px 40px;
+    color: #565559;
+    margin-top: -65px;
+    border-bottom: 2px dashed #e0e0e2;
+}
+.section3 .s3_cont2>p.p1{
+    line-height: 24px;
+    margin-bottom: 35px;
+    text-indent: 2em;
+}
+.section3 .s3_cont2>p{
+    line-height: 24px;
+}
+.section3 div.s33{
+    padding-top: 68px;
+}
+/*==============内容三结束====================*/
+.section4 .s4_top>img{
+    display: block;
+    margin: 0 auto;
+}
+.section4 ol{
+    margin-top: 90px;
+}
+.section4 ol>li{
+    float: left;
+    width: 533px;
+    height: 188px;
+    border: 1px solid #e0e1e5;
+    position: relative;
+    margin-right: 17px;
+}
+.section4 .left .headImg{
+    width: 156px;
+    position: absolute;
+    top: -66px;
+    left: 30px;
+}
+.section4 .left>p{
+    width: 222px;
+    text-align: center;
+    color: #5f4c82;
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    font-size: 24px;
+}
+.section4 .left>p.p1{
+    font-size: 18px;
+    bottom: 10px;
+}
+.section4 .right{
+    padding: 40px 20px 20px 20px;
+    margin-right: 47px;
+    position: relative;
+}
+.section4 .right .p1{
+    width: 246px;
+    color: #838386;
+    margin-bottom: 40px;
+}
+.section4 .right .email {
+    height: 45px;
+    width: 246px;
+    position: absolute;
+    bottom: -24px;
+    left: 20px;
+    background: #e7e8ec;
+    border: 1px solid #e0e1e5;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.section4 .right .email>.span1{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #d9d9e1 url(../img/team_contact.png) 12px 17px no-repeat;
+}
+.section4 .right .email>.span2{
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 200px;
+}
+
+.section4 .other_cont{
+    width: 47px;
+    height: 190px;
+    background: #2999d6;
+    position: absolute;
+    top: -1px;
+    right: -48px;
+}
+.section4 .other_cont li{
+    background: url(../img/team_contact.png) no-repeat;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}
+.section4 .other_cont li.weibo{
+    background-position: 14px -28px;
+}
+.section4 .other_cont li.qq{
+    background-position: 14px -75px;
+}
+.section4 .other_cont li.gi{
+    background-position: 14px -126px;
+}
+.section4 .other_cont li.weixin{
+    background-position: 14px -166px;
+}
+.section4{
+    position: relative;
+}
+.section4 .s4_footer{
+    width: 216px;
+    height: 29px;
+    left: 50%;
+    margin-left: -108px;
+    bottom:-120px;
+    z-index: 20;
+    position: absolute;
+    background: url(../img/next&prev_line.png) no-repeat left center;
+}
+.section4 .s4_footer>.prev{
+    position: absolute;
+    top: 0;
+    height: 29px;
+    width: 29px;
+    background: url(../img/prev_jiantou.png) no-repeat;
+    cursor: pointer;
+}
+.section4 .s4_footer>.line{
+    margin: 7px auto;
+    width: 45px;
+    height: 14px;
+    background: url(../img/next&prev_mbg01.png) no-repeat;
+}
+.section4 .s4_footer>.line>.three{
+    background: url(../img/next&prev_mbg02.png) repeat-x;
+    height: 14px;
+    margin: 0 6px;
+}
+.section4 .s4_footer>.line>.three>span{
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin-right: 7px;
+    margin-top: 4px;
+    background: url(../img/next&prev_others.png);
+}
+.section4 .s4_footer>.line>.three:last-child{
+    margin-right: 0;
+}
+
+.section4 .s4_footer>.next{
+    right: 0;
+    background: url(../img/next_jiantou.png) no-repeat;
+    position: absolute;
+    top: 0;
+    height: 29px;
+    width: 29px;
+    cursor: pointer;
+}
+
+/*===============内容四结束================*/
+.section5{
+    margin-top: 260px;
+    color: #5f4c82;
+}
+.section5 .s5_cont{
+    padding-top: 70px;
+}
+.section5 .s5_cont>.left{
+    width: 550px;
+}
+.section5 .s5_cont>.left{
+    border-right: 1px solid #d3d3d3;
+}
+.section5 .s5_cont h2{
+    font-size: 30px;
+    line-height: 50px;
+}
+.section5 .right .aa{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    background: url(../img/yonghu_morebg.png) no-repeat -69px 0;
+    width: 69px;
+    height: 26px;
+}
+.section5 .s5_cont ol{
+    padding: 70px 0 0 20px;
+}
+.section5 .s5_cont ol li{
+    float: left;
+    width: 168px;
+    height: 80px;
+}
+.section5 .s5_cont ol li.wu{
+    margin-right: -30px;
+}
+.section5 .s5_cont ol li.li{
+    margin-bottom: 70px;
+}
+
+.section5 .s5_cont>.right{
+    width: 554px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+/*=============内容四结束============*/
+.section6{
+    padding-top: 160px;
+}
+.section6 .input{
+    height: 45px;
+    width: 333px;
+    background: #fff;
+    border: 1px solid #dedfe3;
+    margin-bottom: 27px;
+    float: left;
+    margin-right: 25px;
+}
+.section6 .input1{
+    margin-right: 0;
+}
+
+.section6 .xtb{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #e7e8ec url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+.section6 span.x{
+    background-position: -31px 14px;
+}
+.section6 span.t{
+    background-position: -31px 14px;
+}
+
+.section6 input{
+    float: left;
+    line-height: 45px;
+    height: 45px;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 268px;
+    border: none 0;
+    padding-left: 18px;
+    outline: none;
+}
+.section6 .textarea {
+    height: 208px;
+    width: 693px;
+    margin-right: 39px;
+    background: #fff;
+    border: 1px solid #dedfe3;
+    float: left;
+}
+.section6 .txt_span{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #e7e8ec url(../img/lianxi_icons.png) -128px 14px no-repeat;
+}
+.section6 textarea{
+    float: left;
+    line-height: 27px;
+    color: #5f4c82;
+    font-size: 16px;
+    width: 600px;
+    padding-right: 17px;
+    height: 196px;
+    border: none 0;
+    text-align: left;
+    padding-left: 18px;
+    padding-top: 10px;
+}
+.section6 p{
+    color: #7f7d83;
+    height: 86px;
+    width: 339px;
+    float: left;
+}
+.section6 .p1 .red{
+    color: red;
+}
+
+.section6 .fs{
+    background: #168bcb;
+    border-color: #2999d6;
+    cursor: pointer;
+    width: 331px;
+    float: left;
+}
+
+.section6 .fs .fs_span{
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #2999d6 url(../img/lianxi_icons.png) -179px 14px no-repeat;
+}
+.section6 .fs .span{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+    font-size: 16px;
+    width: 200px;
+    padding-left: 18px;
+    text-align: center;
+    color: #fff;
+}
+.section6 .s6_ul{
+    margin-top: 280px;
+}
+.section6 .s6_ul li{
+    float: left;
+    width: 345px;
+    height: 250px;
+    position: relative;
+    margin-right: 10px;
+}
+.section6 .s6_ul .img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.section6 .s6_ul .rt{
+    position: absolute;
+    top: 0;
+    left: 138px;
+}
+.section6 .s6_ul h2{
+    line-height: 60px;
+    height: 60px;
+    width: 210px;
+    background: url(../img/lianxi_kuaier_bg.png) no-repeat bottom left;
+    color: #5f4c82;
+    margin-bottom: 14px;
+}
+.section6 .s6_ul p{
+    line-height: 32px;
+    color: #524d5c;
+    height: auto;
+}
+.section6 .s6_ul p.mtop{
+    margin-top: 40px;
+}
+/*--=============内容五结束============*/
+.section7{
+    background: url("../img/dt_02.png") no-repeat center;
+    width: 100%;
+    height: 628px;
+}
+
+footer{
+    position: relative;
+}
+footer img.top{
+    width: 100%;
+}
+footer .footer_f{
+    width: 100%;
+    height: 348px;
+    background: url(../img/yinyue_bg.jpg);
+    position: absolute;
+    top: 23px;
+}
+footer .music{
+    width: 415px;
+    margin: 100px auto 0;
+}
+footer .music .span1{
+    float: left;
+    cursor: pointer;
+    width: 57px;
+    height: 57px;
+    background: url(../img/yinyue_duo.png) no-repeat;
+    margin-right: 26px;
+}
+footer .shenm{
+    border-top: 2px #9890a2 dashed;
+    text-align: center;
+    line-height: 65px;
+    margin-top: 79px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 155px;
+}
+footer .shenm p{
+    position: absolute;
+    left: 43%;
+}
+

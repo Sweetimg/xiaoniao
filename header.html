@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>头部</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .inner{
+            width: 1105px;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 120px;
+            /*background-color: #2d1948;*/
+            background-image: url("img/yinyue_bg.jpg");
+        }
+        header nav{
+            margin-top: 50px;
+        }
+        header nav ul>li{
+            float: left;
+            position: relative;
+            padding-left: 25px;
+            color: #fff;
+            /*height: 35px;*/
+            height: 50px;
+            cursor: pointer;
+        }
+        header nav ul>li h4{
+            display: inline-block;
+            padding-right: 10px;
+        }
+        i{
+            background: url("img/nav_xiajiantou.png") no-repeat center;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -5px;
+        }
+
+       /* b{
+            background: url("img/nav_now_bg.png") no-repeat  center;
+            width: 4px;
+            height: 4px;
+            display: block;
+            !*top: 10px;
+            left: 10px;
+            position: absolute;*!
+            margin: 10px auto;
+            opacity: 0;
+        }
+        b.active{
+            opacity: 1;
+        }
+        header nav ul>li:hover b{
+            opacity: 1;
+        }*/
+
+        header nav ul>li:hover{
+            background: url("img/nav_now_bg.png") no-repeat  center;
+        }
+
+        .now{
+            background: url("img/nav_now_bg.png") no-repeat  center;
+        }
+
+        header nav ul>li ol{
+            position: absolute;
+            top: 35px;
+            left: -22px;
+            width: 180px;
+            background: #36264a;
+            display: none;
+            overflow: hidden;
+        }
+
+        /*动画写效果*/
+        @keyframes run {
+            0%{
+                height: 240px;
+            }
+            25%{
+                height: 300px;
+            }
+            50%{
+                height: 310px;
+            }
+            75%{
+                height: 260px;
+            }
+            100%{
+                height: 240px;
+            }
+
+        }
+        @keyframes run1 {
+            0%{
+                height: 150px;
+            }
+            25%{
+                height: 160px;
+            }
+            50%{
+                height: 180px;
+            }
+            75%{
+                height: 160px;
+            }
+            100%{
+                height: 150px;
+            }
+
+        }
+        /*header nav ul>li:hover ol.navOl{
+            display: block;
+            animation: run linear 0.7s;
+        }*/
+       /* header nav ul>li:hover ol.navOl1{
+            display: block;
+            animation: run1 linear 0.7s;
+        }*/
+
+        header nav ul>li ol>li{
+            width: 180px;
+            font-size: 13px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header nav ul>li ol>li:hover{
+            padding-left: 20px;
+            transition: padding-left 0.4s ease 0s;
+            background: #3498db url(img/nav_li_bg.png) no-repeat 165px 15px;
+        }
+        header nav ol>li>a{
+            font-size: 13px;
+            color: #fff;
+            width: 180px;
+            text-align: center;
+            line-height: 40px;
+        }
+        /*===========头部结束=========*/
+    </style>
+</head>
+<body>
+<header>
+    <div class="inner">
+        <div id="logo" class="fl">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="fr">
+            <ul id="navUl">
+                <li>
+                    <h4>首页
+                        <b class="active"></b>
+                    </h4>
+                </li>
+                <li>
+                    <h4>翡翠学院
+                        <b></b>
+                    </h4>
+                    <i></i>
+                    <ol class="navOl">
+                        <li>
+                            <a href="#">学习主页</a>
+                        </li>
+                        <li>
+                            <a href="#">小鸟掌学概述</a>
+                        </li>
+                        <li>
+                            <a href="#">对企业的价值</a>
+                        </li>
+                        <li>
+                            <a href="#">小鸟掌云</a>
+                        </li>
+                        <li>
+                            <a href="#">微课联盟</a>
+                        </li>
+                        <li>
+                            <a href="#">App下载</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>卓新动态
+                        <b></b>
+                    </h4>
+                </li>
+                <li>
+                    <h4>企业文化
+                        <b></b>
+                    </h4>
+                    <i></i>
+                    <ol class="navOl1">
+                        <li>
+                            <a href="#">公司理念</a>
+                        </li>
+                        <li>
+                            <a href="#">公司文化 </a>
+                        </li>
+                        <li>
+                            <a href="#">公司官网</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>人力资源
+                        <b></b>
+                    </h4>
+                    <i></i>
+                    <ol class="navOl1">
+                        <li>
+                            <a href="#">人才理念</a>
+                        </li>
+                        <li>
+                            <a href="#">团队介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">招聘信息</a>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>联系我们
+                        <b></b>
+                    </h4>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<!--===============头部结束================-->
+
+<script src="js/jquery.min.js"></script>
+<script>
+    /*1.鼠标经过时需要出现小白点
+    * 2.点击时除了当前显示，其余都消失
+    * 3.鼠标经过时，下拉菜单出现 抖动效果
+    * 4.鼠标经过有一个向右的平移的子菜单*/
+
+    $(function(){
+        $("#navUl>li").hover(function(){
+            $(this).find("ol").stop().slideDown(700);
+        },function(){
+            $(this).find("ol").stop().slideUp();
+        }).click(function(){
+            $(this).addClass("now").find("ol").hide().end().siblings().removeClass("now")
+        })
+    })
+</script>
+</body>
+</html>
